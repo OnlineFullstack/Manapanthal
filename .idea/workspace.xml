@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5028dd1-fe38-4ece-a870-387c9150d1af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Angular/my_angular_project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/main/java/org/example/Logical/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/main/java/org/example/Logical/Logical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/main/java/org/example/Logical/Logical2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/test/java/org/example/LogicalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/APIValidations/APIContentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/APIValidations/ApiBaseResponses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Controllers/BookingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Controllers/PassengerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/DTO/Requests/PassengerRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/DTO/Responses/PassengerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Entities/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Repository/PassengerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Service/FlightApiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Service/PassengerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Service/impl/FlightApiServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Service/impl/PassengerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Utils/Date_Time_Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Utils/EndPointURI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Utils/FlightApiProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Utils/ValidationCodesAndMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/YpsilonApiDocs/FlightApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/YpsilonApiDocs/YpsilonApiFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/resources/FlightBookingAPI.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/resources/ValidationCodesAndMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/Controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/DAO/Requests/CustomerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/DAO/Responses/CustomerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/Entities/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/Logics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/Repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/Services/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/Services/Impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/Utils/Date_and_Time.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/ParkAllService/src/main/java/com/parke/ParkeAllService/Logical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/ParkAllService/src/main/java/com/parke/ParkeAllService/PdfOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyMateBackend/src/main/java/com/Mymate/Backend/MyMateBackend/ServiceApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parkee/src/main/java/com/example/Parkee/CommonResponses/APIContentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parkee/src/main/java/com/example/Parkee/Enums/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Parkee/src/main/java/com/example/Parkee/Utils/DateTimeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Website/src/main/java/com/manapanthal/Website/WebsockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Website/src/main/java/com/manapanthal/Website/WebsocketConfig.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/ClientManagement">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2rfV9vtxlGcZjXPnxr3nHq8dVL1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "Backend"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5028dd1-fe38-4ece-a870-387c9150d1af" name="Changes" comment="" />
+      <created>1736949969435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736949969435</updated>
+    </task>
+    <servers />
+  </component>
+</project>
