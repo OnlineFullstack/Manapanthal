@@ -3,7 +3,7 @@ import { Search, Filter } from 'lucide-react';
 
 export function SearchFilters() {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md space-y-4">
+    <div className="bg-white p-6 rounded-lg shadow-md space-y-4 md:mx-32">
       <div className="flex items-center gap-4">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />

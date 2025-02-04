@@ -1,142 +1,260 @@
-import React from 'react';
-import { Mail, Lock, User, Calendar, MapPin } from 'lucide-react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { PersonalInfoForm } from './signup/PersonalInfoForm';
+import { EducationCareerForm } from './signup/EducationCareerForm';
+import { FamilyBackgroundForm } from './signup/FamilyBackgroundForm';
+import { ProfilePictureUpload } from './signup/ProfilePictureUpload';
+import { PartnerPreferencesForm } from './signup/PartnerPreferencesForm';
+import { ChevronRight } from 'lucide-react';
 
-export function SignUpForm({ onSuccess }) {
+function App() {
+const navigate = useNavigate();
+const handleTopBack = () =>{
+  navigate("/");
+}
+
+  const [currentStep, setCurrentStep] = useState(1);
+  const [profile, setProfile] = useState({
+    profileCreator: 'Self',
+    personalInfo: {
+      name: '',
+      age: 0,
+      location: '',
+      height: 0,
+      weight: 0,
+      bmi: 0,
+      bodyType: 'Average',
+      skinTone: 'Fair',
+      birthMonth: 1,
+      birthYear: 2000,
+      horoscope: '',
+    },
+    educationCareer: {
+      education: '',
+      occupation: '',
+      company: '',
+      income: '',
+    },
+    familyBackground: {
+      fatherOccupation: '',
+      motherOccupation: '',
+      siblings: 0,
+      familyAssets: '',
+      personalAssets: '',
+    },
+    profilePictures: [],
+    partnerPreferences: {
+      locations: [],
+      minHeight: 150,
+      maxHeight: 190,
+      minWeight: 45,
+      maxWeight: 90,
+      preferredSkinTones: [],
+      preferredProfessions: [],
+    },
+  });
+
+  const profileCreators = ['Self', 'Parent', 'Siblings', 'Guardian', 'Third Party'];
+
+  const handleProfileCreatorChange = (value) => {
+    setProfile(prev => ({ ...prev, profileCreator: value }));
+  };
+
+  const updatePersonalInfo = (field, value) => {
+    setProfile(prev => ({
+      ...prev,
+      personalInfo: { ...prev.personalInfo, [field]: value }
+    }));
+  };
+
+  const updateEducationCareer = (field, value) => {
+    setProfile(prev => ({
+      ...prev,
+      educationCareer: { ...prev.educationCareer, [field]: value }
+    }));
+  };
+
+  const updateFamilyBackground = (field, value) => {
+    setProfile(prev => ({
+      ...prev,
+      familyBackground: { ...prev.familyBackground, [field]: value }
+    }));
+  };
+
+  const updateProfilePictures = (images) => {
+    setProfile(prev => ({ ...prev, profilePictures: images }));
+  };
+
+  const updatePartnerPreferences = (field, value) => {
+    setProfile(prev => ({
+      ...prev,
+      partnerPreferences: { ...prev.partnerPreferences, [field]: value }
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSuccess(); // In a real app, this would validate and create the account first
+    console.log('Form submitted:', profile);
+    // Here you would typically send the data to your backend
+  };
+
+  const renderStep = () => {
+    switch (currentStep) {
+      case 1:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Profile Creator</h2>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {profileCreators.map((creator) => (
+                <button
+                  key={creator}
+                  onClick={() => handleProfileCreatorChange(creator)}
+                  className={`p-4 rounded-lg border ${
+                    profile.profileCreator === creator
+                      ? 'border-indigo-500 bg-indigo-50'
+                      : 'border-gray-200'
+                  }`}
+                >
+                  {creator}
+                </button>
+              ))}
+            </div>
+            <PersonalInfoForm
+              values={profile.personalInfo}
+              onChange={updatePersonalInfo}
+            />
+          </div>
+        );
+      case 2:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Education & Career</h2>
+            <EducationCareerForm
+              values={profile.educationCareer}
+              onChange={updateEducationCareer}
+            />
+          </div>
+        );
+      case 3:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Family Background</h2>
+            <FamilyBackgroundForm
+              values={profile.familyBackground}
+              onChange={updateFamilyBackground}
+            />
+          </div>
+        );
+      case 4:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Profile Pictures</h2>
+            <ProfilePictureUpload
+              images={profile.profilePictures}
+              onImagesChange={updateProfilePictures}
+            />
+          </div>
+        );
+      case 5:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Partner Preferences</h2>
+            <PartnerPreferencesForm
+              values={profile.partnerPreferences}
+              onChange={updatePartnerPreferences}
+            />
+          </div>
+        );
+      default:
+        return null;
+    }
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-      <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-gray-900">Create Account</h2>
-        <p className="text-gray-600 mt-2">Start your journey to find true love</p>
+    <div className="relative min-h-screen bg-cover bg-center bg-[url('https://images.pexels.com/photos/29239515/pexels-photo-29239515/free-photo-of-exchanging-wedding-rings-in-ceremony-close-up.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+    {/* Red Tint Overlay */}
+    {/* <div className="absolute inset-0 bg-red-700 bg-opacity-50"></div> */}
+    <button className='mr-auto bg-red-500 text-white md:m-10 px-7 py-2 rounded-md hover:bg-red-600  button-hover' onClick={handleTopBack}>
+    Back
+    </button>
+      <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-lg shadow-xl overflow-hidden form-container">
+          <div className="px-6 py-4 bg-red-500">
+            <h1 className="text-2xl font-bold text-white">User Registration</h1>
+          </div>
+
+          <div className="p-6">
+            <div className="mb-8">
+              <div className="flex items-center justify-between mb-4">
+                {Array.from({ length: 5 }, (_, i) => i + 1).map((step) => (
+                  <div
+                    key={step}
+                    className={`flex items-center ${
+                      step < 5 ? 'flex-1' : ''
+                    }`}
+                  >
+                    <div
+                      className={`w-8 h-8 rounded-full flex items-center justify-center step-transition ${
+                        step <= currentStep
+                          ? 'bg-red-500 text-white'
+                          : 'bg-gray-200 text-gray-600'
+                      }`}
+                    >
+                      {step}
+                    </div>
+                    {step < 5 && (
+                      <div
+                        className={`flex-1 h-1 mx-2 step-transition ${
+                          step < currentStep
+                            ? 'bg-red-500'
+                            : 'bg-gray-200'
+                        }`}
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="form-field">
+                {renderStep()}
+              </div>
+
+              <div className="mt-8 flex justify-between">
+                {currentStep > 1 && (
+                  <button
+                    type="button"
+                    onClick={() => setCurrentStep(currentStep - 1)}
+                    className="bg-gray-100 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-200 button-hover"
+                  >
+                    Previous
+                  </button>
+                )}
+                {currentStep < 5 ? (
+                  <button
+                    type="button"
+                    onClick={() => setCurrentStep(currentStep + 1)}
+                    className="ml-auto bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600 flex items-center button-hover"
+                  >
+                    Next
+                    <ChevronRight className="w-4 h-4 ml-2" />
+                  </button>
+                ) : (
+                  <button
+                    type="submit"
+                    className="ml-auto bg-green-500 text-white px-8 py-2 rounded-md hover:bg-green-600 button-hover"
+                  >
+                    Submit Registration
+                  </button>
+                )}
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-
-      <form className="space-y-6" onSubmit={handleSubmit}>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="space-y-2">
-            <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
-              First Name
-            </label>
-            <div className="relative">
-              <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-              <input
-                type="text"
-                id="firstName"
-                className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
-                placeholder="First name"
-              />
-            </div>
-          </div>
-
-          <div className="space-y-2">
-            <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
-              Last Name
-            </label>
-            <div className="relative">
-              <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-              <input
-                type="text"
-                id="lastName"
-                className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
-                placeholder="Last name"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            Email
-          </label>
-          <div className="relative">
-            <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <input
-              type="email"
-              id="email"
-              className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
-              placeholder="Enter your email"
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-4">
-          <div className="space-y-2">
-            <label htmlFor="birthDate" className="block text-sm font-medium text-gray-700">
-              Birth Date
-            </label>
-            <div className="relative">
-              <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-              <input
-                type="date"
-                id="birthDate"
-                className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
-              />
-            </div>
-          </div>
-
-          <div className="space-y-2">
-            <label htmlFor="location" className="block text-sm font-medium text-gray-700">
-              Location
-            </label>
-            <div className="relative">
-              <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-              <select
-                id="location"
-                className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
-              >
-                <option value="">Select city</option>
-                <option value="mumbai">Mumbai</option>
-                <option value="delhi">Delhi</option>
-                <option value="bangalore">Bangalore</option>
-                <option value="chennai">Chennai</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-            Password
-          </label>
-          <div className="relative">
-            <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <input
-              type="password"
-              id="password"
-              className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
-              placeholder="Create a password"
-            />
-          </div>
-        </div>
-
-        <div className="flex items-center">
-          <input
-            type="checkbox"
-            id="terms"
-            className="h-4 w-4 text-rose-500 focus:ring-rose-500 border-gray-300 rounded"
-          />
-          <label htmlFor="terms" className="ml-2 block text-sm text-gray-700">
-            I agree to the{' '}
-            <button type="button" className="text-rose-500 hover:text-rose-600">
-              Terms of Service
-            </button>{' '}
-            and{' '}
-            <button type="button" className="text-rose-500 hover:text-rose-600">
-              Privacy Policy
-            </button>
-          </label>
-        </div>
-
-        <button
-          type="submit"
-          className="w-full py-2 px-4 bg-rose-500 text-white rounded-md hover:bg-rose-600 transition-colors"
-        >
-          Create Account
-        </button>
-      </form>
     </div>
   );
 }
+
+export default App;

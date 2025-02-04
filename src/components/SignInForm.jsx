@@ -1,10 +1,32 @@
-import React from 'react';
+import React,{useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Mail, Lock } from 'lucide-react';
+// import SignUpForm from './SignUpForm';
 
-export function SignInForm({ onSuccess }) {
+export function SignInForm({  }) {
+
+  const navigate = useNavigate();
+
+  const toSignUp =()=>{
+    navigate("/signup");
+  }
+
+  // const [ showSignUp,setShowSignUp ]= useState(false);
+
+  // const handleSignUp = () =>{
+  //   setShowSignUp(true);
+  //   setTimeout(() => {
+  //     document.getElementById("SignUp-Form")?.scrollIntoView({ behavior: "smooth" });
+  //   }, 200); // Smooth scroll after rendering
+  // }
+
+  
+  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSuccess(); // In a real app, this would validate credentials first
+    navigate("/home")
+    // onSuccess(); // In a real app, this would validate credentials first
   };
 
   return (
@@ -56,18 +78,29 @@ export function SignInForm({ onSuccess }) {
               Remember me
             </label>
           </div>
+
+         
+          
+        </div>
+        <div className=''>
           <button type="button" className="text-sm text-rose-500 hover:text-rose-600">
             Forgot password?
           </button>
-        </div>
+          <button type="button" className="text-sm mx-2 text-rose-500 hover:text-rose-600" 
+          onClick={toSignUp}>
+           Signup
+          </button>
+          </div>
 
         <button
           type="submit"
           className="w-full py-2 px-4 bg-rose-500 text-white rounded-md hover:bg-rose-600 transition-colors"
+          // onClick={handleSubmit}
         >
           Sign In
         </button>
       </form>
+      {/* {showSignUp && <SignUpForm />} */}
     </div>
   );
 }

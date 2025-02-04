@@ -1,24 +1,25 @@
 import React from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+// import aiCouple from "../assets/bg-3.png"
 
 const stories = [
   {
-    imageUrl: "https://images.unsplash.com/photo-1623091410901-00e2d268901f?auto=format&fit=crop&q=80",
+    imageUrl: "https://images.squarespace-cdn.com/content/v1/6564afb4f0851760cfcdde58/1b4a7a6a-ad81-446d-978e-19939b620972/Harini-Aswin-MCC-Hall-Chennai-3869.jpg?format=2500w",
     names: "Raj & Priya",
     story: "Found love through HeartLinks in just 2 months. Our traditional values and modern outlook matched perfectly.",
     date: "Married Dec 2023"
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80",
+    imageUrl: "https://images.squarespace-cdn.com/content/v1/6564afb4f0851760cfcdde58/721abbc7-21b1-4ad2-965a-7ceadac8b64c/Tharsana-Satya-Le-Pondy-Pondicherry-0739.jpg?format=2500w",
     names: "Amit & Neha",
     story: "From our first chat to wedding bells in 6 months. Thank you HeartLinks for bringing us together!",
-    date: "Married Oct 2023"
+    date: "Married Oct 2024"
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1620571514289-ccd5f272e19d?auto=format&fit=crop&q=80",
+    imageUrl:"https://images.unsplash.com/photo-1665960213530-3fb10da1f25e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ,
     names: "Karan & Meera",
     story: "Distance was never a barrier. Found my soulmate from a different city. Now happily married!",
-    date: "Married Aug 2023"
+    date: "Married Aug 2024"
   }
 ];
 
@@ -34,7 +35,7 @@ export function SuccessStories() {
   };
 
   React.useEffect(() => {
-    const timer = setInterval(nextSlide, 5000); // Auto-advance every 5 seconds
+    const timer = setInterval(nextSlide, 3000); 
     return () => clearInterval(timer);
   }, []);
 
