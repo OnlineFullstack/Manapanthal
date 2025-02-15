@@ -11,7 +11,7 @@ const Navbar = ({ onSignIn, onSignUp }) => {
 
   return (
     <>
-      <nav className="absolute z-10 top-0 left-0 w-full md:py-3 px-4 md:px-8 bg-transparent">
+      <nav className="absolute z-10  left-0 w-full md:py-3 px-4 md:px-8 bg-transparent">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -23,7 +23,7 @@ const Navbar = ({ onSignIn, onSignUp }) => {
 
             {/* Desktop Navigation - Hidden on Small Screens */}
             <div className="hidden md:flex space-x-4">
-              <a href="#" className="text-gray-100 hover:text-red-800 px-3 py-2 rounded-md text-sm font-medium">
+              {/* <a href="#" className="text-gray-100 hover:text-red-800 px-3 py-2 rounded-md text-sm font-medium">
                 About
               </a>
               <a href="#" className="text-gray-100 hover:text-red-800 px-3 py-2 rounded-md text-sm font-medium">
@@ -31,7 +31,7 @@ const Navbar = ({ onSignIn, onSignUp }) => {
               </a>
               <a href="#" className="text-gray-100 hover:text-red-800 px-3 py-2 rounded-md text-sm font-medium">
                 Contact
-              </a>
+              </a> */}
               <button
                 onClick={() => setShowSignIn(true)}
                 className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors text-lg font-semibold"
@@ -52,9 +52,9 @@ const Navbar = ({ onSignIn, onSignUp }) => {
 
           {/* Mobile Menu (Dropdown) */}
           <div className={`md:hidden bg-white shadow-lg rounded-lg transition-all duration-300 ${isMenuOpen ? "block" : "hidden"}`}>
-            <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-red-100">About</a>
+            {/* <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-red-100">About</a>
             <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-red-100">Services</a>
-            <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-red-100">Contact</a>
+            <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-red-100">Contact</a> */}
             <button
               onClick={() => {
                 setShowSignIn(true);

@@ -10,10 +10,56 @@ import { SuccessStories } from '../components/SuccessStories';
 import Reveal from '../components/Reveal';
 import Package from '../components/userComponents/Package';
 import CallToAction from '../components/CallToAction';
+import OfferNewsMarque from '../components/OfferNewsMarque'
+
+import { BlurredProfiles } from '../components/BlurredProfiles';
+
 
 export default function LandingPage() {
+
+  const profiles = [
+    {
+      name: "Priya Sharma",
+      age: 27,
+      occupation: "Software Engineer",
+      location: "Mumbai, India",
+      imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80",
+      membershipType:"Gold",
+      membershipNumber:"MA123456"
+    },
+    {
+      name: "Rahul Verma",
+      age: 29,
+      occupation: "Business Analyst",
+      location: "Delhi, India",
+      imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80",
+      membershipType:"silver",
+      membershipNumber:"MA123456"
+    },
+    {
+      name: "Anita Patel",
+      age: 26,
+      occupation: "Doctor",
+      location: "Bangalore, India",
+      imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80",
+      membershipType:"Gold",
+      membershipNumber:"MA123456"
+    },
+    ,
+    {
+      name: "Anita Patel",
+      age: 26,
+      occupation: "Doctor",
+      location: "Bangalore, India",
+      imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80",
+      membershipType:"Gold",
+      membershipNumber:"MA123456"
+    },]
   return (
+    <>
+    <OfferNewsMarque/>
     <div className="min-h-screen">
+      
       <Navbar className="absolute top-0 left-0 w-full z-10 text-white" />
 
       {/* Hero Section */}
@@ -31,6 +77,17 @@ export default function LandingPage() {
 
       <Reveal />
       <SuccessStories />
+
+       {/* Profile Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:mx-32 md:my-6 backdrop-blur-lg">
+                    {profiles.map((profile, index) => (
+                      <BlurredProfiles key={index} {...profile} />
+                    ))}
+                  </div>
+                  <div>
+                    <h2 className='font-semibold text-xl text-gray-500 my-3 text-center'>Choose your Plan to get started!</h2>
+                  </div>
+      
       <Package />
 
       {/* Services Section */}
@@ -63,5 +120,6 @@ export default function LandingPage() {
 
       <CallToAction />
     </div>
+    </>
   );
 }

@@ -11,6 +11,7 @@ export function PersonalInfoForm({ values, onChange }) {
 
   const bodyTypes = ['Slim', 'Athletic', 'Average', 'Heavy'];
   const skinTones = ['Very Fair', 'Fair', 'Wheatish', 'Dark'];
+  const diability = ['yes','no']
 
   return (
     <div className="space-y-6">
@@ -36,11 +37,21 @@ export function PersonalInfoForm({ values, onChange }) {
         </div>
 
         <div className="form-field">
-          <label className="block text-sm font-medium text-gray-700">Location</label>
+          <label className="block text-sm font-medium text-gray-700">Current Location</label>
           <input
             type="text"
             value={values.location}
             onChange={(e) => onChange('location', e.target.value)}
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring focus:ring-red-200 focus:ring-opacity-50 transition-all duration-200"
+          />
+        </div>
+
+        <div className="form-field">
+          <label className="block text-sm font-medium text-gray-700">Native</label>
+          <input
+            type="text"
+            value={values.native}
+            onChange={(e) => onChange('native', e.target.value)}
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring focus:ring-red-200 focus:ring-opacity-50 transition-all duration-200"
           />
         </div>
@@ -101,6 +112,7 @@ export function PersonalInfoForm({ values, onChange }) {
           </select>
         </div>
 
+
         <div className="form-field">
           <label className="block text-sm font-medium text-gray-700">Birth Month</label>
           <select
@@ -127,6 +139,20 @@ export function PersonalInfoForm({ values, onChange }) {
               <option key={i} value={new Date().getFullYear() - 50 + i}>
                 {new Date().getFullYear() - 50 + i}
               </option>
+            ))}
+          </select>
+        </div>
+
+        
+        <div className="form-field">
+          <label className="block text-sm font-medium text-gray-700">Do you have Disabilities?</label>
+          <select
+            value={values.disability}
+            onChange={(e) => onChange('disability', e.target.value)}
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring focus:ring-red-200 focus:ring-opacity-50 transition-all duration-200"
+          >
+            {diability.map((disability) => (
+              <option key={disability} value={disability}>{disability}</option>
             ))}
           </select>
         </div>

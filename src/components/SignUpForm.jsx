@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PersonalInfoForm } from './signup/PersonalInfoForm';
+import { ReligiousBackgroundForm } from './signup/ReligiousBackgroundForm';
+import { AstroForm } from './signup/AstroForm';
 import { EducationCareerForm } from './signup/EducationCareerForm';
 import { FamilyBackgroundForm } from './signup/FamilyBackgroundForm';
+import { LifeStyleForm } from './signup/LifeStyleForm';
 import { ProfilePictureUpload } from './signup/ProfilePictureUpload';
 import { PartnerPreferencesForm } from './signup/PartnerPreferencesForm';
 import { ChevronRight } from 'lucide-react';
@@ -19,15 +22,32 @@ const handleTopBack = () =>{
     personalInfo: {
       name: '',
       age: 0,
-      location: '',
+      currentLocation: '',
+      Native: '',
       height: 0,
       weight: 0,
       bmi: 0,
       bodyType: 'Average',
       skinTone: 'Fair',
+      disability:'',
       birthMonth: 1,
       birthYear: 2000,
       horoscope: '',
+    },
+    religious: {
+      religion: '',
+      community: '',
+      subCommunity: '',
+      partnersCast: '',
+      gothram: '',
+    },
+    astro: {
+      dosham: '',
+      dob: '',
+      cityOfBirth: '',
+      raasi: '',
+      natchatram: '',
+      laknam:'',
     },
     educationCareer: {
       education: '',
@@ -36,11 +56,18 @@ const handleTopBack = () =>{
       income: '',
     },
     familyBackground: {
+      fatherName:'',
+      motherName:'',
       fatherOccupation: '',
       motherOccupation: '',
       siblings: 0,
       familyAssets: '',
       personalAssets: '',
+    },
+    LifeStyle: {
+      diet:'',
+      hobbies:'',
+     
     },
     profilePictures: [],
     partnerPreferences: {
@@ -67,6 +94,19 @@ const handleTopBack = () =>{
     }));
   };
 
+  const updateReligious = (field, value) => {
+    setProfile(prev => ({
+      ...prev,
+      religious: { ...prev.religious, [field]: value }
+    }));
+  };
+
+  const updateAstro = (field, value) => {
+    setProfile(prev => ({
+      ...prev,
+      astro: { ...prev.astro, [field]: value }
+    }));
+  };
   const updateEducationCareer = (field, value) => {
     setProfile(prev => ({
       ...prev,
@@ -78,6 +118,12 @@ const handleTopBack = () =>{
     setProfile(prev => ({
       ...prev,
       familyBackground: { ...prev.familyBackground, [field]: value }
+    }));
+  };
+  const updateLifeStyle = (field, value) => {
+    setProfile(prev => ({
+      ...prev,
+      LifeStyle: { ...prev.LifeStyle, [field]: value }
     }));
   };
 
@@ -128,6 +174,26 @@ const handleTopBack = () =>{
       case 2:
         return (
           <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Religious Background</h2>
+            <ReligiousBackgroundForm
+              values={profile.religious}
+              onChange={updateReligious}
+            />
+          </div>
+        );
+      case 3:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Astro Details</h2>
+            <AstroForm
+              values={profile.astro}
+              onChange={updateAstro}
+            />
+          </div>
+        );
+      case 4:
+        return (
+          <div className="space-y-6">
             <h2 className="text-xl font-semibold">Education & Career</h2>
             <EducationCareerForm
               values={profile.educationCareer}
@@ -135,7 +201,7 @@ const handleTopBack = () =>{
             />
           </div>
         );
-      case 3:
+      case 5:
         return (
           <div className="space-y-6">
             <h2 className="text-xl font-semibold">Family Background</h2>
@@ -145,7 +211,17 @@ const handleTopBack = () =>{
             />
           </div>
         );
-      case 4:
+      case 6:
+        return (
+          <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Lifestyle & Hobbies</h2>
+            <LifeStyleForm
+              values={profile.LifeStyle}
+              onChange={updateLifeStyle}
+            />
+          </div>
+        );
+      case 7:
         return (
           <div className="space-y-6">
             <h2 className="text-xl font-semibold">Profile Pictures</h2>
@@ -155,7 +231,7 @@ const handleTopBack = () =>{
             />
           </div>
         );
-      case 5:
+      case 8:
         return (
           <div className="space-y-6">
             <h2 className="text-xl font-semibold">Partner Preferences</h2>
@@ -186,11 +262,11 @@ const handleTopBack = () =>{
           <div className="p-6">
             <div className="mb-8">
               <div className="flex items-center justify-between mb-4">
-                {Array.from({ length: 5 }, (_, i) => i + 1).map((step) => (
+                {Array.from({ length: 8 }, (_, i) => i + 1).map((step) => (
                   <div
                     key={step}
                     className={`flex items-center ${
-                      step < 5 ? 'flex-1' : ''
+                      step < 8 ? 'flex-1' : ''
                     }`}
                   >
                     <div
@@ -202,7 +278,7 @@ const handleTopBack = () =>{
                     >
                       {step}
                     </div>
-                    {step < 5 && (
+                    {step < 8 && (
                       <div
                         className={`flex-1 h-1 mx-2 step-transition ${
                           step < currentStep
@@ -231,7 +307,7 @@ const handleTopBack = () =>{
                     Previous
                   </button>
                 )}
-                {currentStep < 5 ? (
+                {currentStep < 8 ? (
                   <button
                     type="button"
                     onClick={() => setCurrentStep(currentStep + 1)}

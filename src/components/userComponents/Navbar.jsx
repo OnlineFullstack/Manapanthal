@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-16">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <a href="/" className="">
+          <a href="/home" className="">
             <img src={logo} alt="logo" className='w-56'/>
           </a>
         </div>
@@ -22,14 +22,14 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
         <Link to="about">
           <span
-            className="text-red-500 hover:text-indigo-50 px-3 py-2 rounded-md font-medium text-sm  md:text-xl"
+            className="text-red-700 hover:text-red-500 px-3 py-2 rounded-md font-medium text-sm  md:text-xl"
           >
             About
           </span> 
           </Link>
           <Link to="/service">
           <span
-            className="text-red-500 hover:text-indigo-50 px-3 py-2 rounded-md font-medium text-sm  md:text-xl"
+            className="text-red-700 hover:text-red-500 px-3 py-2 rounded-md font-medium text-sm  md:text-xl"
           >
             Services
           </span> 
@@ -38,21 +38,21 @@ const Navbar = () => {
         
         <Link to="/contact"> 
           <span
-            className="text-red-500 hover:text-indigo-50 px-3 py-2 rounded-md font-medium text-sm  md:text-xl"
+            className="text-red-700 hover:text-red-500 px-3 py-2 rounded-md font-medium text-sm  md:text-xl"
           >
             Contact
           </span> 
           </Link>
           
-         <Link to="/interest">
-          <span className="text-red-500 hover:text-indigo-50 px-3 my-6 text-2xl">
+         <Link to="/notification">
+          <span className="text-red-700 hover:text-red-500 px-3 my-6 text-2xl">
             <FontAwesomeIcon icon={faHeart} />
           </span>
           </Link>
 
           <button
             onClick={() => setShowSignIn(true)}
-            className="px-3 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors  font-semibold button-hover"
+            className="px-3 py-2 bg-red-700 text-white rounded-md  transition-colors  font-semibold button-hover"
           >
             Logout
           </button>
@@ -61,7 +61,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
-            className="text-red-700 hover:text-indigo-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500"
+            className="text-red-700 hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-700"
             aria-label="Open menu"
           >
             <svg
