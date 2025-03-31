@@ -1,5 +1,7 @@
-package com.Manapanthal.ClientManagement.DTO.Requests;
+package com.Manapanthal.ClientManagement.DTO.Requests.ClientDataRequests;
 
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.Embedded;
 import lombok.Data;
 
 @Data

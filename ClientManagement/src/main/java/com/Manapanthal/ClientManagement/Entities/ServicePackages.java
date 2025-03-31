@@ -1,4 +1,4 @@
-package com.Manapanthal.ClientManagement.Entities.ClientData;
+package com.Manapanthal.ClientManagement.Entities;
 
 import com.Manapanthal.ClientManagement.Utilities.DateTimeGenerate;
 import jakarta.persistence.Entity;
@@ -7,17 +7,19 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
-import java.sql.Timestamp;
+
+import java.util.Currency;
 
 @Getter
 @Setter
 @Entity
-public class Astrology extends DateTimeGenerate {
+public class ServicePackages extends DateTimeGenerate {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String rasi;
-    private String natchathiram;
-    private Timestamp dob_dot;
-    private String birth_location;
+    private String packageName;
+    private Double packageAmount;
+    private String description;
+
 }

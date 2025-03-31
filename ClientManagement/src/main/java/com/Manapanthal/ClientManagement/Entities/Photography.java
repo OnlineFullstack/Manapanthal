@@ -1,15 +1,25 @@
 package com.Manapanthal.ClientManagement.Entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.Data;
+import com.Manapanthal.ClientManagement.Utilities.DateTimeGenerate;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+import java.util.List;
+
+@Getter
+@Setter
 @Entity
-public class Photography {
+public class Photography extends DateTimeGenerate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String photographerName;
+    private Long mobile;
+    private String location;
+    @ManyToMany
+    @JoinTable(name = "packages",
+            joinColumns = @JoinColumn(name = "photography_id"),
+    inverseJoinColumns = @JoinColumn(name = "package_id"))
+    private List<ServicePackages> servicePackagesList;
 }

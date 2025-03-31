@@ -6,18 +6,34 @@
   <component name="ChangeListManager">
     <list default="true" id="f5028dd1-fe38-4ece-a870-387c9150d1af" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../../Angular/my_angular_project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Django/.idea/Django.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Django/pro1/.idea/pro1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Django/pro2/.idea/pro2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Django/python/.idea/python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Django/test/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Flutter/app/lib/Test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/.idea/Java Maven &amp; Gradle.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/.idea/Java learning.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/main/java/org/example/Collections/ListsAndSets.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/main/java/org/example/Logical/ListNode.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/main/java/org/example/Logical/Logical.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/main/java/org/example/Logical/Logical2.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java learning/AdvancedJava/src/test/java/org/example/LogicalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java Maven &amp; Gradle/Java8/.idea/Java8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Python/.idea/Python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Python/Django/project/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Python/Test/.idea/Test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/.idea/E-Flyer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/.idea/modules/Bookings.main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/APIValidations/APIContentResponse.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/APIValidations/ApiBaseResponses.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Controllers/BookingController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Controllers/PassengerController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/DTO/Requests/PassengerRequests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/DTO/Responses/PassengerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Entities/Bookings.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Entities/Passenger.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Repository/PassengerRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/Service/FlightApiService.java" afterDir="false" />
@@ -32,6 +48,32 @@
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/java/com/EFlyer/Bookings/YpsilonApiDocs/YpsilonApiFormat.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/resources/FlightBookingAPI.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../E-Flyer/Bookings/src/main/resources/ValidationCodesAndMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/APIResponses/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/APIResponses/ContentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/APIResponses/PaginatedResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Controllers/PhotographyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/PhotographyRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/WeddingHallRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Responses/PhotographyResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/WeddingHall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Enums/ResponseStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Repositories/PhotographyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Repositories/WeddingHallRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/EmailServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/Implementation/ClientFilterImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/Implementation/EmailServicesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/Implementation/PhotographyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/Implementation/WeddingHallServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/PhotographyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/WeddingHallService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Utilities/EndpointApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Utilities/ResponseKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Utilities/ValidationServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientManagement/src/main/resources/validationCodesMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ManapanthalWebsite/.idea/modules/ClientManagement.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/.idea/Microservices.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Microservices/Parke/.idea/Parke.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/Controller/CustomerController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/DAO/Requests/CustomerRequest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Microservices/Parke/CustomerSerivce/src/main/java/com/parke/CustomerSerivce/DAO/Responses/CustomerResponse.java" afterDir="false" />
@@ -49,6 +91,30 @@
       <change afterPath="$PROJECT_DIR$/../Parkee/src/main/java/com/example/Parkee/Utils/DateTimeUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Website/src/main/java/com/manapanthal/Website/WebsockController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Website/src/main/java/com/manapanthal/Website/WebsocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../serverSocket/untitled3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hibernate/Testing/untitled2/untitled2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/AstrologyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/AstrologyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/CareerStudiesRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/CareerStudiesRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/ClientRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ContactInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/ContactInfoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/LifestyleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/LifestyleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/MatchingsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/MatchingsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/PersonalDetailsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/PersonalDetailsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ProfileImagesRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/ProfileImagesRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/UserInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/DTO/Requests/ClientDataRequests/UserInfoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/ClientData/Astrology.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/ClientData/Astrology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/ClientData/ClientData.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/ClientData/ClientData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/ClientData/ContactInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/ClientData/ContactInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/ClientData/PersonalDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/ClientData/PersonalDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/Photography.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Entities/Photography.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Repositories/ClientDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Repositories/ClientDataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/Implementation/ClientServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientManagement/src/main/java/com/Manapanthal/ClientManagement/Services/Implementation/ClientServiceImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,14 +129,48 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/ClientManagement">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClientManagement" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClientManagement" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClientManagement" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ClientManagement" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,14 +184,137 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "Backend"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Backend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/Spring/Manapanthal/ClientManagement&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Spring\Manapanthal\ClientManagement\src\main\java\com\Manapanthal\ClientManagement" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ClientManagementApplication">
+    <configuration name="ClientManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Manapanthal.ClientManagement.ClientManagementApplication" />
+      <module name="ClientManagement.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Manapanthal.ClientManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientManagement [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ClientManagement" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootBuildImage" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ClientManagement [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ClientManagement" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ClientManagement [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ClientManagement" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ClientManagement [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ClientManagement" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientManagementApplication" />
+        <item itemvalue="Gradle.ClientManagement [clean]" />
+        <item itemvalue="Gradle.ClientManagement [build]" />
+        <item itemvalue="Gradle.ClientManagement [classes]" />
+        <item itemvalue="Gradle.ClientManagement [bootBuildImage]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -1,4 +1,4 @@
-package com.Manapanthal.ClientManagement.DTO.Requests;
+package com.Manapanthal.ClientManagement.DTO.Requests.ClientDataRequests;
 
 import lombok.Getter;
 import lombok.Setter;

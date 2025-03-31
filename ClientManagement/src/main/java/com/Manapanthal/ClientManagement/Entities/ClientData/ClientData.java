@@ -13,12 +13,11 @@ public class ClientData extends DateTimeGenerate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @OneToOne
     @JoinColumn(name = "personalDetails_id")
     private PersonalDetails personalDetails;
     @OneToOne
-    @JoinColumn(name = "contactInfo_id")
+    @JoinColumn(name = "contactInfo_id",nullable = false)
     private ContactInfo contactInfo;
     @OneToOne
     @JoinColumn(name = "profileImages_id")
